@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "Singapore GEO Citation Probes, September 2026 (ChatGPT and Google AI Mode)"
+version: "1.0"
+date-released: "2026-09-24"
+authors:
+  - family-names: Pang
+    given-names: Haoyang
+    affiliation: Canlah AI
+    orcid: "https://orcid.org/0009-0009-7039-0394"
+license: CC-BY-4.0
+url: "https://canlah.ai/zh/playbook/"
+abstract: >-
+  110 buyer questions from five Singapore industries (dental and aesthetics,
+  family law, tuition, B2B SaaS, e-commerce) put to ChatGPT (OpenAI Responses
+  API, gpt-5.5 with web search, approximate location Singapore) and, in round 1,
+  also to Google AI Mode through a third-party SERP API. Round 1 (60 questions)
+  produced 526 citations (307 ChatGPT, 219 AI Mode); round 2 (50 questions,
+  ChatGPT only) produced 241. Includes the questions, every cited URL with its
+  order in the answer, ChatGPT answer texts, annotations of 92 cited pages and
+  a catalogue of 46 cited-page types. Google AI Mode answer text, Google organic
+  result lists and copies of third-party pages are not included.
+keywords:
+  - generative engine optimization
+  - GEO
+  - AI search
+  - citation analysis
+  - ChatGPT
+  - Google AI Mode
+  - Singapore

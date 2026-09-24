@@ -1,0 +1,111 @@
+query_id,industry,industry_zh,round,position_in_round,language,intent_family,intent_detail,query,probed_at,engines_run,chatgpt_status,ai_mode_status,google_organic_top10_collected
+R1-DEN-01,dental_aesthetics,牙科·医美,r1,1,en,决策,价格;资格,how much does a single tooth dental implant cost in Singapore and can I use Medisave,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-DEN-02,dental_aesthetics,牙科·医美,r1,2,en,决策,对比;价格,Invisalign vs braces in Singapore which is better and how much does each cost,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-DEN-03,dental_aesthetics,牙科·医美,r1,3,en,决策,价格;对比,scaling and polishing price Singapore polyclinic vs private clinic,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-DEN-04,dental_aesthetics,牙科·医美,r1,4,en,决策,价格;对比,dental crown price Singapore porcelain vs zirconia,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-DEN-05,dental_aesthetics,牙科·医美,r1,5,en,决策,判断;价格,is teeth whitening at the dentist in Singapore worth it and how much does it cost,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-DEN-06,dental_aesthetics,牙科·医美,r1,6,en,决策,价格,filler price Singapore how much per syringe,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-DEN-07,dental_aesthetics,牙科·医美,r1,7,en,决策,资格/流程,pico laser for pigmentation Singapore how many sessions do I need,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-DEN-08,dental_aesthetics,牙科·医美,r1,8,en,决策,榜单,best clinic for melasma pigmentation removal in Singapore,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-DEN-09,dental_aesthetics,牙科·医美,r1,9,en,决策,对比,dental implant vs bridge which is better for one missing tooth,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-DEN-10,dental_aesthetics,牙科·医美,r1,10,en,决策,补救,my dental implant failed what are my options in Singapore,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-DEN-11,dental_aesthetics,牙科·医美,r1,11,zh,决策,价格,新加坡洗牙多少钱,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-DEN-12,dental_aesthetics,牙科·医美,r1,12,zh,决策,补救,新加坡打玻尿酸出了问题怎么办 可以找谁投诉,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R2-DEN-01,dental_aesthetics,牙科·医美,r2,1,en,定义,什么是 X,what is a dental bone graft and why do I need one before an implant,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-DEN-02,dental_aesthetics,牙科·医美,r2,2,en,流程,一步一步怎么办,how to claim Medisave for wisdom tooth surgery step by step,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-DEN-03,dental_aesthetics,牙科·医美,r2,3,en,统计,有百分之多少,what percentage of adults in Singapore have gum disease,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-DEN-04,dental_aesthetics,牙科·医美,r2,4,en,计算,我这种情况要付多少 / 计算器,how much will I pay for wisdom tooth removal if I use Medisave and CHAS,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-DEN-05,dental_aesthetics,牙科·医美,r2,5,en,附近,<地铁站> 附近,dentist near Tampines MRT open on Sunday,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-DEN-06,dental_aesthetics,牙科·医美,r2,6,en,单品测评,<某家/某款> 好不好,is Q&M Dental good,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-DEN-07,dental_aesthetics,牙科·医美,r2,7,en,支柱,complete guide 全指南,complete guide to Invisalign in Singapore,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-DEN-08,dental_aesthetics,牙科·医美,r2,8,en,规则,合不合法 / 有什么规定,is it legal to get botox from a beautician in Singapore,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-DEN-09,dental_aesthetics,牙科·医美,r2,9,en,清单,要带什么 / 准备清单,what to prepare before wisdom tooth surgery checklist,2026-09-23 01:05 UTC+08:00,chatgpt,ok_no_citations,not_run_quota,yes
+R2-DEN-10,dental_aesthetics,牙科·医美,r2,10,zh,定义,定义+副作用（中文）,新加坡超声刀 Ultherapy 是什么 有什么副作用,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R1-LAW-01,family_law,家事法,r1,1,en,决策,价格,How much does a divorce lawyer cost in Singapore?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-LAW-02,family_law,家事法,r1,2,en,决策,资格/流程,How long does an uncontested divorce take in Singapore?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-LAW-03,family_law,家事法,r1,3,en,决策,资格/流程,Can I file for divorce without a lawyer in Singapore?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-LAW-04,family_law,家事法,r1,4,en,决策,榜单,Best family lawyer in Singapore for divorce and child custody,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-LAW-05,family_law,家事法,r1,5,en,决策,资格/流程,How does child custody work in Singapore for fathers?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-LAW-06,family_law,家事法,r1,6,en,决策,价格,How much child maintenance will I have to pay in Singapore after divorce?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-LAW-07,family_law,家事法,r1,7,en,决策,资格;价格,Is a prenup legally binding in Singapore and how much does it cost?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-LAW-08,family_law,家事法,r1,8,en,决策,价格,How much does it cost to write a will in Singapore?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-LAW-09,family_law,家事法,r1,9,en,决策,流程;价格,How do I make an LPA in Singapore and how much does it cost?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-LAW-10,family_law,家事法,r1,10,en,决策,资格/流程,Can I divorce in Singapore without separation?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-LAW-11,family_law,家事法,r1,11,zh,决策,资格/流程,新加坡离婚流程是怎样的，需要多久？,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-LAW-12,family_law,家事法,r1,12,zh,决策,价格,新加坡离婚律师费用大概多少钱？,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R2-LAW-01,family_law,家事法,r2,1,en,定义,什么是 X,What are ancillary matters in a Singapore divorce?,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-LAW-02,family_law,家事法,r2,2,en,流程,一步一步怎么办,How to file for divorce in Singapore step by step,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-LAW-03,family_law,家事法,r2,3,en,统计,有百分之多少,What percentage of divorces in Singapore are uncontested?,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-LAW-04,family_law,家事法,r2,4,en,计算,我这种情况要付多少 / 计算器,"How much maintenance will I have to pay my wife if I earn $8,000 a month in Singapore?",2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-LAW-05,family_law,家事法,r2,5,en,附近,<地铁站> 附近,Divorce lawyer near Tampines MRT,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-LAW-06,family_law,家事法,r2,6,en,单品测评,<某家/某款> 好不好,Is PKWA Law good for divorce? reviews,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-LAW-07,family_law,家事法,r2,7,en,支柱,complete guide 全指南,Complete guide to child custody in Singapore,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-LAW-08,family_law,家事法,r2,8,en,规则,合不合法 / 有什么规定,Is it legal to take my child overseas without my spouse's consent during divorce in Singapore?,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-LAW-09,family_law,家事法,r2,9,en,清单,要带什么 / 准备清单,Documents checklist for filing divorce in Singapore,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-LAW-10,family_law,家事法,r2,10,zh,规则,离婚后组屋分割（中文）,新加坡离婚后组屋怎么分？,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R1-TUI-01,tuition_education,补习·教育,r1,1,en,决策,价格,"How much are tuition rates in Singapore in 2026 per hour for primary, secondary and JC?",2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-TUI-02,tuition_education,补习·教育,r1,2,en,决策,价格;榜单,What is the O Level math tuition rate in Singapore and which is the best O Level math tuition centre?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-TUI-03,tuition_education,补习·教育,r1,3,en,决策,榜单,Best PSLE tuition centre in Singapore for Math and Science?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,rate_limited,yes
+R1-TUI-04,tuition_education,补习·教育,r1,4,en,决策,对比,Is group tuition or 1-to-1 home tuition better for my child in Singapore?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok_no_citations,yes
+R1-TUI-05,tuition_education,补习·教育,r1,5,en,决策,榜单;价格,"Best IB tuition in Singapore for IB Math and Economics, and how much does it cost?",2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-TUI-06,tuition_education,补习·教育,r1,6,en,决策,价格;榜单,How much does A Level (JC) H2 Math tuition cost in Singapore and who are the best tutors?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-TUI-07,tuition_education,补习·教育,r1,7,en,决策,榜单;判断,Best coding classes for kids in Singapore and are they worth it?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-TUI-08,tuition_education,补习·教育,r1,8,en,决策,榜单,Best English enrichment classes for kids in Singapore for a 6 year old?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-TUI-09,tuition_education,补习·教育,r1,9,en,决策,榜单;资格,Which SkillsFuture courses are worth taking in Singapore and which pay training allowance?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-TUI-10,tuition_education,补习·教育,r1,10,en,决策,判断,Is tuition necessary in Singapore or is my child fine without it?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,error,ok,yes
+R1-TUI-11,tuition_education,补习·教育,r1,11,zh,决策,榜单,新加坡补习中心排名 哪家好？,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-TUI-12,tuition_education,补习·教育,r1,12,zh,决策,价格,新加坡请一对一家教一小时多少钱？小学和中学补习费用是多少？,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R2-TUI-01,tuition_education,补习·教育,r2,1,en,定义,什么是 X,What is the PSLE Achievement Level (AL) scoring system and how does it work?,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,no
+R2-TUI-02,tuition_education,补习·教育,r2,2,en,流程,一步一步怎么办,How to apply for Direct School Admission (DSA) to secondary school in Singapore step by step?,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,no
+R2-TUI-03,tuition_education,补习·教育,r2,3,en,统计,有百分之多少,What percentage of students in Singapore take private tuition and how much do families spend on tuition on average?,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,no
+R2-TUI-04,tuition_education,补习·教育,r2,4,en,计算,我这种情况要付多少 / 计算器,How do I calculate my child's PSLE score and which secondary schools can he get into with AL 12?,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,no
+R2-TUI-05,tuition_education,补习·教育,r2,5,en,附近,<地铁站> 附近,Good primary math tuition centre near Tampines MRT,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,no
+R2-TUI-06,tuition_education,补习·教育,r2,6,en,单品测评,<某家/某款> 好不好,Is Mavis Tutorial Centre good? Reviews from parents,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,no
+R2-TUI-07,tuition_education,补习·教育,r2,7,en,支柱,complete guide 全指南,Complete guide to the Singapore education system for expat parents,2026-09-23 01:05 UTC+08:00,chatgpt,error,not_run_quota,no
+R2-TUI-08,tuition_education,补习·教育,r2,8,en,规则,合不合法 / 有什么规定,What are the MOE rules for private tuition centres in Singapore? Do tutors need to be registered?,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,no
+R2-TUI-09,tuition_education,补习·教育,r2,9,zh,清单,要带什么 / 准备清单,PSLE 考试当天要带什么？考前准备清单,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,no
+R2-TUI-10,tuition_education,补习·教育,r2,10,en,单品测评,单机构测评,Is Physics Cafe good for JC H2 Physics tuition?,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,no
+R1-B2B-01,b2b_saas,B2B SaaS,r1,1,en,决策,榜单,What is the best CRM for a small business in 2026?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-B2B-02,b2b_saas,B2B SaaS,r1,2,en,决策,对比,"HubSpot vs Salesforce for a small business, which is better?",2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-B2B-03,b2b_saas,B2B SaaS,r1,3,en,决策,价格,How much does HubSpot CRM cost per month?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-B2B-04,b2b_saas,B2B SaaS,r1,4,en,决策,榜单,What are the best Zendesk alternatives for a small support team?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-B2B-05,b2b_saas,B2B SaaS,r1,5,en,决策,对比,Freshdesk vs Zendesk: which help desk is better for small business?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-B2B-06,b2b_saas,B2B SaaS,r1,6,en,决策,榜单,What is the best ticketing software for a small business?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-B2B-07,b2b_saas,B2B SaaS,r1,7,en,决策,对比,Asana vs Monday vs ClickUp: which project management tool should a small team pick?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-B2B-08,b2b_saas,B2B SaaS,r1,8,en,决策,价格,How much does monday.com cost per user?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-B2B-09,b2b_saas,B2B SaaS,r1,9,en,决策,榜单,What is the best payroll software for a small business with one or a few employees?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-B2B-10,b2b_saas,B2B SaaS,r1,10,en,决策,对比,"Gusto vs Rippling vs ADP for small business payroll, which is better?",2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-B2B-11,b2b_saas,B2B SaaS,r1,11,en,决策,对比,"QuickBooks vs Xero for a small business, which accounting software is better?",2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-B2B-12,b2b_saas,B2B SaaS,r1,12,en,决策,选型,How do I choose the right CRM for my small business?,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok_no_citations,yes
+R2-B2B-01,b2b_saas,B2B SaaS,r2,1,en,定义,什么是 X,What is an HRIS and does a small company in Singapore need one?,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-B2B-02,b2b_saas,B2B SaaS,r2,2,en,流程,一步一步怎么办,How to set up CPF contributions in Xero payroll for Singapore employees,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-B2B-03,b2b_saas,B2B SaaS,r2,3,en,统计,有百分之多少,What percentage of SMEs in Singapore use cloud accounting software?,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-B2B-04,b2b_saas,B2B SaaS,r2,4,en,计算,我这种情况要付多少 / 计算器,Payroll software cost calculator for a 30-person company in Singapore,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-B2B-05,b2b_saas,B2B SaaS,r2,5,en,附近,<地铁站> 附近,Accounting software vendors with an office near Raffles Place or Paya Lebar,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-B2B-06,b2b_saas,B2B SaaS,r2,6,en,单品测评,<某家/某款> 好不好,Is Talenox payroll good? Talenox review for Singapore SMEs,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-B2B-07,b2b_saas,B2B SaaS,r2,7,en,支柱,complete guide 全指南,Complete guide to InvoiceNow e-invoicing in Singapore for businesses,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-B2B-08,b2b_saas,B2B SaaS,r2,8,zh,规则,合不合法 / 有什么规定,PDPA 规定下，公司把员工资料存在海外 SaaS 服务器上合法吗？,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-B2B-09,b2b_saas,B2B SaaS,r2,9,en,清单,要带什么 / 准备清单,Checklist for switching payroll software in Singapore mid-year,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-B2B-10,b2b_saas,B2B SaaS,r2,10,en,规则,集成+合规认证,"Does HubSpot integrate with Xero, and is HubSpot SOC 2 and PDPA compliant?",2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R1-ECO-01,ecommerce,电商·消费品,r1,1,en,决策,榜单;价格,best budget cordless vacuum singapore under $300,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-ECO-02,ecommerce,电商·消费品,r1,2,en,决策,对比,dyson vs shark cordless vacuum which is better,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-ECO-03,ecommerce,电商·消费品,r1,3,en,决策,榜单,best robot vacuum for HDB flat singapore,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-ECO-04,ecommerce,电商·消费品,r1,4,en,决策,榜单,best air purifier singapore for haze and allergies,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-ECO-05,ecommerce,电商·消费品,r1,5,en,决策,对比,xiaomi vs dyson air purifier which to buy in singapore,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-ECO-06,ecommerce,电商·消费品,r1,6,en,决策,榜单;价格,best running shoes singapore for beginners under $150,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok_no_citations,yes
+R1-ECO-07,ecommerce,电商·消费品,r1,7,en,决策,购买渠道,where to buy running shoes singapore cheapest,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-ECO-08,ecommerce,电商·消费品,r1,8,en,决策,榜单,best sunscreen for humid weather singapore,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-ECO-09,ecommerce,电商·消费品,r1,9,en,决策,榜单,best stroller singapore for newborn and MRT,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok_no_citations,yes
+R1-ECO-10,ecommerce,电商·消费品,r1,10,en,决策,榜单,best travel cabin stroller singapore,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-ECO-11,ecommerce,电商·消费品,r1,11,en,决策,榜单,best mattress singapore for back pain,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R1-ECO-12,ecommerce,电商·消费品,r1,12,en,决策,购买渠道,where to buy mattress singapore cheap good quality,2026-09-23 00:10 UTC+08:00,chatgpt;google_ai_mode,ok,ok,yes
+R2-ECO-01,ecommerce,电商·消费品,r2,1,en,定义,什么是 X,what is the difference between HEPA and true HEPA air purifier,2026-09-23 01:05 UTC+08:00,chatgpt,ok_no_citations,not_run_quota,yes
+R2-ECO-02,ecommerce,电商·消费品,r2,2,en,流程,一步一步怎么办,how to claim GST refund on purchases at changi airport tourist refund,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-ECO-03,ecommerce,电商·消费品,r2,3,en,统计,有百分之多少,what percentage of singapore households own a robot vacuum,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-ECO-04,ecommerce,电商·消费品,r2,4,en,计算,我这种情况要付多少 / 计算器,air conditioner electricity cost calculator singapore how much per month,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-ECO-05,ecommerce,电商·消费品,r2,5,en,附近,<地铁站> 附近,where to buy mattress near tampines try in store,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-ECO-06,ecommerce,电商·消费品,r2,6,en,单品测评,<某家/某款> 好不好,dyson v15 detect review is it worth it in singapore,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-ECO-07,ecommerce,电商·消费品,r2,7,en,支柱,complete guide 全指南,complete guide to buying a stroller in singapore for new parents,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-ECO-08,ecommerce,电商·消费品,r2,8,en,规则,合不合法 / 有什么规定,is it legal to buy vape online in singapore rules,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-ECO-09,ecommerce,电商·消费品,r2,9,en,清单,要带什么 / 准备清单,hospital bag checklist singapore what to bring for delivery,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
+R2-ECO-10,ecommerce,电商·消费品,r2,10,zh,规则,退货退款消费者权益（中文）,网购退货退款 新加坡 消费者权益 规定 怎么办,2026-09-23 01:05 UTC+08:00,chatgpt,ok,not_run_quota,yes
