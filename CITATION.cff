@@ -3,14 +3,31 @@ message: "If you use this dataset, please cite it as below."
 type: dataset
 title: "Singapore GEO Citation Probes, September 2026 (ChatGPT and Google AI Mode)"
 version: "1.0"
-date-released: "2026-09-24"
+date-released: "2026-09-28"
+doi: "10.5281/zenodo.23005020"
 authors:
   - family-names: Pang
     given-names: Haoyang
     affiliation: Canlah AI
     orcid: "https://orcid.org/0009-0009-7039-0394"
 license: CC-BY-4.0
-url: "https://canlah.ai/zh/playbook/"
+url: "https://canlah.ai/data/ai-citations-sg-2026/"
+repository: "https://github.com/Canlah-AI/ai-citations-sg-2026"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23005020"
+    description: "Zenodo record of this version"
+  - type: url
+    value: "https://huggingface.co/datasets/CanlahAI/ai-citations-sg-2026"
+    description: "Hugging Face mirror"
+references:
+  - type: book
+    title: "GEO Playbook v1.0"
+    authors:
+      - family-names: Pang
+        given-names: Haoyang
+    doi: "10.5281/zenodo.23005022"
+    url: "https://canlah.ai/zh/playbook/"
 abstract: >-
   110 buyer questions from five Singapore industries (dental and aesthetics,
   family law, tuition, B2B SaaS, e-commerce) put to ChatGPT (OpenAI Responses

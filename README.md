@@ -34,6 +34,8 @@ configs:
 
 **English summary.** 110 buyer questions from five Singapore industries (dental and aesthetics, family law, tuition, B2B SaaS, e-commerce) were put to ChatGPT (OpenAI Responses API, `gpt-5.5` with the web search tool, approximate location Singapore) and, in round 1, also to Google AI Mode (through a third-party SERP API, `gl=sg`). This dataset contains the questions, every cited URL with its order in the answer (917 rows, 767 of them from the official runs), the ChatGPT answer texts, our page-by-page annotations of 92 cited pages, and our catalogue of 46 cited-page types. Google AI Mode answer text, Google organic result lists and copies of third-party pages are not included; see "What is not included". Licence: CC BY 4.0.
 
+**DOI** [10.5281/zenodo.23005020](https://doi.org/10.5281/zenodo.23005020) · Mirrors: [GitHub](https://github.com/Canlah-AI/ai-citations-sg-2026) · [Hugging Face](https://huggingface.co/datasets/CanlahAI/ai-citations-sg-2026) · [canlah.ai](https://canlah.ai/data/ai-citations-sg-2026/) · Method book: *GEO Playbook* v1.0, https://canlah.ai/zh/playbook/ (DOI [10.5281/zenodo.23005022](https://doi.org/10.5281/zenodo.23005022))
+
 本数据集由 Canlah AI 在写《GEO Playbook》时采集。我们在两个 AI 引擎上问了一批新加坡买家会问的问题，记下答案引用了哪些网页、按什么顺序，再逐页拆解了一部分被引网页。数字的重数过程和关键发现见 [stats.md](stats.md)。
 
 ---
@@ -209,9 +211,21 @@ configs:
 
 请引用本数据集（元数据见 [CITATION.cff](CITATION.cff)）：
 
-> Pang, Haoyang (2026). *Singapore GEO Citation Probes, September 2026 (ChatGPT and Google AI Mode)* (Version 1.0) [Data set]. Canlah AI.
+> Pang, Haoyang (2026). *Singapore GEO Citation Probes, September 2026 (ChatGPT and Google AI Mode)* (Version 1.0) [Data set]. Canlah AI. Zenodo. https://doi.org/10.5281/zenodo.23005020
 
-DOI 待 Zenodo 发布后补上。与本数据集配套的方法书是《GEO Playbook》v1.0：https://canlah.ai/zh/playbook/
+```bibtex
+@dataset{pang_2026_sg_geo_citations,
+  author    = {Pang, Haoyang},
+  title     = {Singapore GEO Citation Probes, September 2026 (ChatGPT and Google AI Mode)},
+  year      = {2026},
+  version   = {1.0},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23005020},
+  url       = {https://doi.org/10.5281/zenodo.23005020}
+}
+```
+
+同一份数据的其他副本：GitHub https://github.com/Canlah-AI/ai-citations-sg-2026 · Hugging Face https://huggingface.co/datasets/CanlahAI/ai-citations-sg-2026 · 官网 https://canlah.ai/data/ai-citations-sg-2026/。与本数据集配套的方法书是《GEO Playbook》v1.0：https://canlah.ai/zh/playbook/（DOI 10.5281/zenodo.23005022）。
 
 ## 10. 维护
 
