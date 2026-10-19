@@ -1,215 +1,126 @@
----
-license: cc-by-4.0
-language:
-- en
-- zh
-task_categories:
-- question-answering
-- text-retrieval
-size_categories:
-- n<1K
-pretty_name: "Singapore GEO Citation Probes, September 2026 (ChatGPT and Google AI Mode)"
-tags:
-- generative-engine-optimization
-- geo
-- ai-search
-- citation-analysis
-- chatgpt
-- google-ai-mode
-- singapore
-configs:
-- config_name: queries
-  data_files: queries.csv
-- config_name: citations
-  data_files: citations.csv
-- config_name: chatgpt_answers
-  data_files: chatgpt_answers.jsonl
-- config_name: page_annotations
-  data_files: page_annotations.csv
-- config_name: page_types
-  data_files: page_types.csv
----
+<p align="center">
+  <a href="https://canlah.ai/data/ai-citations-sg-2026/?utm_source=github&utm_medium=community&utm_campaign=wk1019&utm_content=ai-citations-readme">
+    <img src="assets/banner.jpg" alt="AI Citations SG 2026: 7.2% of ChatGPT's cited URLs sat in Google's organic top 10; 23.9% of ChatGPT's cited URLs repeat when the same question is asked twice." width="100%">
+  </a>
+</p>
 
-# Singapore GEO Citation Probes 2026-09
+<h3 align="center">What do ChatGPT and Google AI Mode cite when Singapore buyers ask?<br>110 questions, every cited URL, open to recount.</h3>
 
-**English summary.** 110 buyer questions from five Singapore industries (dental and aesthetics, family law, tuition, B2B SaaS, e-commerce) were put to ChatGPT (OpenAI Responses API, `gpt-5.5` with the web search tool, approximate location Singapore) and, in round 1, also to Google AI Mode (through a third-party SERP API, `gl=sg`). This dataset contains the questions, every cited URL with its order in the answer (917 rows, 767 of them from the official runs), the ChatGPT answer texts, our page-by-page annotations of 92 cited pages, and our catalogue of 46 cited-page types. Google AI Mode answer text, Google organic result lists and copies of third-party pages are not included; see "What is not included". Licence: CC BY 4.0.
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-CC%20BY%204.0-2563EB" alt="License: CC BY 4.0"></a>
+  <a href="https://doi.org/10.5281/zenodo.23005020"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.23005020.svg" alt="DOI 10.5281/zenodo.23005020"></a>
+  <a href="https://huggingface.co/datasets/CanlahAI/ai-citations-sg-2026"><img src="https://img.shields.io/badge/Hugging%20Face-dataset-2563EB" alt="Hugging Face dataset"></a>
+  <img src="https://img.shields.io/badge/questions-110-2563EB" alt="110 questions">
+  <img src="https://img.shields.io/badge/engines-ChatGPT%20%C2%B7%20Google%20AI%20Mode-2563EB" alt="Engines: ChatGPT and Google AI Mode">
+  <img src="https://img.shields.io/badge/format-CSV%20%C2%B7%20JSONL-2563EB" alt="Format: CSV and JSONL">
+</p>
 
-**DOI** [10.5281/zenodo.23005020](https://doi.org/10.5281/zenodo.23005020) · Mirrors: [GitHub](https://github.com/Canlah-AI/ai-citations-sg-2026) · [Hugging Face](https://huggingface.co/datasets/CanlahAI/ai-citations-sg-2026) · [canlah.ai](https://canlah.ai/data/ai-citations-sg-2026/) · Method book: *GEO Playbook* v1.0, https://canlah.ai/zh/playbook/ (DOI [10.5281/zenodo.23005022](https://doi.org/10.5281/zenodo.23005022))
+<p align="center">
+  <a href="#30-second-start"><b>Load it in 30 seconds</b></a> ·
+  <a href="stats.md">Recounts and findings</a> ·
+  <a href="https://github.com/Canlah-AI/geo-playbook">The playbook built on it</a> ·
+  <a href="DATASHEET.zh.md">中文完整数据说明</a>
+</p>
 
-本数据集由 Canlah AI 在写《GEO Playbook》时采集。我们在两个 AI 引擎上问了一批新加坡买家会问的问题，记下答案引用了哪些网页、按什么顺序，再逐页拆解了一部分被引网页。数字的重数过程和关键发现见 [stats.md](stats.md)。
+<p align="center">
+  <a href="https://github.com/Canlah-AI/geo-playbook/blob/main/assets/playbook-5-moves-44s.mp4">
+    <img src="assets/playbook-5-moves.gif" alt="What this dataset shows, in five moves: plan each engine separately, stop grading yourself on Google's top 10, put the answer in the first 30% of the page, put pricing in a real table, re-ask every month." width="560">
+  </a>
+  <br><sub>▶ <a href="https://github.com/Canlah-AI/geo-playbook/blob/main/assets/playbook-5-moves-44s.mp4">Watch the 44-second film</a></sub>
+</p>
 
 ---
 
-## 1. 动机
+Put the same 60 Singapore buyer questions to ChatGPT and Google AI Mode and they cite almost entirely different pages: **19 of 507 cited URLs shared (3.7%)**. Ask ChatGPT the same question twice, minutes apart, and only 23.9% of its cited URLs come back. Here is every citation behind those numbers, so you can check them yourself.
 
-- **为什么做**：想知道中小企业的网页怎样才会被 AI 答案引用，而且要有实测，不只凭经验。
-- **谁做的**：Canlah AI（新加坡），作者 Haoyang Pang。
-- **经费**：公司自有经费，没有外部资助。
-- **公开的目的**：让别人能核对《GEO Playbook》里每个数字的出处，也让别人能在同一批问句上复测。
+Five Singapore industries. 110 buyer questions. ChatGPT (OpenAI API, `gpt-5.5` with web search, Singapore location) and, in round 1, Google AI Mode (through a third-party SERP API). This dataset keeps the questions, every cited URL in answer order, the ChatGPT answer texts, our page-by-page annotations of cited pages, and a catalogue of 46 cited-page types. Every headline number below can be recounted from these files; the snippet in [30-second start](#30-second-start) reproduces the first one.
 
-## 2. 组成
+## Contents
 
-| 文件 | 行数 | 一行是什么 |
+- [Key findings](#key-findings)
+- [30-second start](#30-second-start)
+- [What's inside](#whats-inside)
+- [How it was collected](#how-it-was-collected)
+- [Use it for, and not for](#use-it-for-and-not-for)
+- [Cite](#cite)
+- [Related](#related)
+
+## Key findings
+
+| # | Finding | Numbers | Detail |
+|---|---|---|---|
+| 1 | **Two engines, two source lists.** Asked the same questions, ChatGPT and Google AI Mode barely overlap | 19 of 507 cited URLs shared (3.7%); by registered domain 31 of 403 (7.7%). In 36 of the 54 questions both engines answered with sources, they shared no URL at all | [stats 3.1](stats.md#31-两个引擎引的来源不一样第一轮) |
+| 2 | **A Google top-10 ranking is not a ChatGPT citation** | 7.2% of ChatGPT's cited URLs (22 of 307) sat in Google's organic top 10 for the same question; for AI Mode, 40.6% (89 of 219) | [stats 3.3](stats.md#33-被引的页大多不在-google-前-10) |
+| 3 | **In round 1, ChatGPT cited no forum or social page** | 0 of 307 for ChatGPT; 30 of 219 for AI Mode (YouTube 13, Reddit 10). About a fifth of Google's organic top 10 for the same questions were forum or social pages (114 of 556). Round 2 ChatGPT: 3 of 241 | [stats 3.2](stats.md#32-chatgpt-几乎不引论坛社媒google-前-10-里有两成是论坛社媒) |
+| 4 | **In regulated industries, ChatGPT leans public and AI Mode leans commercial** | Dental: 76% of ChatGPT's citations (38 of 50) went to government and public-institution pages, while 75% of AI Mode's (39 of 52) went to clinics and other commercial sites. Family law: 77% of ChatGPT's (46 of 60) went to .gov.sg | [stats 3.1](stats.md#31-两个引擎引的来源不一样第一轮) |
+| 5 | **The question type moves the sources** | ChatGPT's share of government pages: 33% (102 of 307) for round 1's decision questions, 57% (138 of 241) for round 2's nine question types. Different question mix, same night | [stats 3.4](stats.md#34-换一种问法chatgpt-的来源就变了第二轮) |
+| 6 | **One ask is a sample, not a ranking** | 30 round-2 questions asked twice, minutes apart: only 23.9% of ChatGPT's cited URLs repeated (53 of 222); 43.8% by domain. 1 of 30 came back identical | [stats 3.5](stats.md#35-同一句问句问两次引用的网址大多不一样) |
+
+One citation means one distinct URL within one answer. Round 1 (60 questions, two engines) produced 526 citations; round 2 (50 questions, ChatGPT only) produced 241. The rounds use different questions, so their counts are reported side by side, never added.
+
+## 30-second start
+
+With pandas, straight from GitHub:
+
+```python
+import pandas as pd
+
+base = "https://raw.githubusercontent.com/Canlah-AI/ai-citations-sg-2026/main/"
+cit = pd.read_csv(base + "citations.csv")
+official = cit[cit.official == "yes"]
+print(official.groupby(["run_id", "engine"]).size())   # r1 chatgpt 307, r1 google_ai_mode 219, r2 chatgpt 241
+
+# Finding 1: cited URLs shared by the two engines, question by question (round 1)
+r1 = official[official.run_id == "r1"]
+urls = r1.groupby(["query_id", "engine"]).url.apply(set).unstack()
+gpt = urls["chatgpt"].apply(lambda s: s if isinstance(s, set) else set())
+aim = urls["google_ai_mode"].apply(lambda s: s if isinstance(s, set) else set())
+shared = sum(len(a & b) for a, b in zip(gpt, aim))
+union = sum(len(a | b) for a, b in zip(gpt, aim))
+print(f"shared {shared} of {union} URLs ({shared / union:.1%})")   # shared 19 of 507 URLs (3.7%)
+```
+
+With Hugging Face `datasets` (configs: `queries`, `citations`, `chatgpt_answers`, `page_annotations`, `page_types`):
+
+```python
+from datasets import load_dataset
+
+citations = load_dataset("CanlahAI/ai-citations-sg-2026", "citations", split="train")   # 917 rows
+queries = load_dataset("CanlahAI/ai-citations-sg-2026", "queries", split="train")       # 110 rows
+```
+
+Or `git clone https://github.com/Canlah-AI/ai-citations-sg-2026` and open the CSVs in any spreadsheet.
+
+## What's inside
+
+| File | Rows | One row is |
 |---|---|---|
-| `queries.csv` | 110 | 一句问句（第一轮 60 + 第二轮 50） |
-| `citations.csv` | 917 | 一个答案里的一个不同网址（正式 767 + 补充 150） |
-| `chatgpt_answers.jsonl` | 141 | 一次 ChatGPT 调用的答案（第一轮 60、第二轮正式 50、第二轮补跑 30、补跑 1） |
-| `page_annotations.csv` | 141 | 我们对一个被引网页的标注（第一轮逐页拆解 92 + 第二轮页型目录样本 49） |
-| `page_types.csv` | 46 | 一种被引页型 |
-| `stats.md` | — | 重数结果、与旧口径的差异、关键发现 |
+| [`queries.csv`](queries.csv) | 110 | One question (round 1: 60, round 2: 50), with industry, language, question type and per-engine status |
+| [`citations.csv`](citations.csv) | 917 | One distinct URL in one answer, with its position, domain, site type and run (767 official, 150 supplementary re-runs; filter `official == "yes"` for the headline numbers) |
+| [`chatgpt_answers.jsonl`](chatgpt_answers.jsonl) | 141 | One ChatGPT call: answer text, model receipt, location, status |
+| [`page_annotations.csv`](page_annotations.csv) | 141 | Our annotation of one cited page: H1, tables, FAQ, where the quoted line sits (92 round-1 teardowns + 49 round-2 catalogue samples) |
+| [`page_types.csv`](page_types.csv) | 46 | One cited-page type, with its evidence tier, typical question and main engine |
+| [`stats.md`](stats.md) | | Recounts from the raw records, every number written as n of N |
 
-### 2.1 两轮探测
+Column-by-column definitions, preprocessing rules and the full list of exclusions are in the Chinese datasheet: [`DATASHEET.zh.md`](DATASHEET.zh.md).
 
-| | 第一轮 | 第二轮 |
-|---|---|---|
-| 时间（UTC+8，取自记录） | 2026-09-23 00:10 | 2026-09-23 01:05 |
-| 问句 | 5 行业 × 12 = 60，其中 6 句中文（牙科、家事法、补习各 2 句） | 5 行业 × 10 = 50，其中 5 句中文（每个行业 1 句） |
-| 问法 | 买东西前的决策问题：多少钱、哪家好、A 还是 B、能不能、出了问题怎么办 | 每行业同一套 9 类问法，每类 1 句：定义、流程、统计、计算、附近、单品测评、支柱（全指南）、规则、清单；第 10 句按行业不同 |
-| 引擎 | ChatGPT + Google AI Mode | 只有 ChatGPT（SerpApi 配额用完，AI Mode 没跑） |
-| 正式引用条数 | ChatGPT 307、AI Mode 219，共 526 | 241 |
-| 另外 | 每句还取了 Google 自然结果前 10（只用于聚合统计，不公开） | 牙科、B2B、电商 30 句又独立跑了一次；培训第 7 句正式那次超时，另补跑了一次 |
+## How it was collected
 
-**「一条引用」的意思**：一个答案里出现的一个不同网址。探测脚本在答案内部去重，所以同一网址在同一答案里只记一条。「526 条」不等于 526 个不同网址（跨答案去重后是 474 个）。
+- **ChatGPT**: OpenAI Responses API, `model = gpt-5.5`, `web_search` tool, approximate location Singapore, no system prompt. Citations come from `url_citation` annotations, de-duplicated within each answer. The model was pinned for the whole study.
+- **Google AI Mode** (round 1 only): SerpApi's `google_ai_mode` engine, `gl=sg`, `hl=en`; citations come from the returned `references` list.
+- **Google organic top 10** (aggregate statistics only, not redistributed): Serper.dev, `gl=sg`.
+- **Timing**: both rounds ran in the early hours of 23 September 2026 (Singapore time), about 55 minutes apart. Each question was asked once in the official runs; 30 round-2 questions were asked a second time to measure how much answers drift.
+- **Not included**: Google AI Mode answer text, Google's organic result lists and copies of third-party pages. We publish URLs, order and our own annotations only.
 
-### 2.2 `queries.csv`
+These are API results, not the consumer apps. Scope is Singapore, five industries, mostly English (11 questions in Chinese).
 
-| 列 | 说明 |
-|---|---|
-| `query_id` | `R1-DEN-01` 这种格式：轮次 - 行业（DEN 牙科医美 / LAW 家事法 / TUI 补习教育 / B2B / ECO 电商）- 本行业第几句 |
-| `industry`, `industry_zh` | 行业 |
-| `round`, `position_in_round` | 轮次、本轮第几句 |
-| `language` | `en` / `zh`，按问句里有没有汉字判定 |
-| `intent_family` | 问法大类。第一轮全部是「决策」；第二轮是定义 / 流程 / 统计 / 计算 / 附近 / 单品测评 / 支柱 / 规则 / 清单 |
-| `intent_detail` | 问法细类，我们标的。第一轮用分号列出一句里混合的几种问法，例如 `价格;资格` |
-| `query` | 问句原文 |
-| `probed_at` | 该轮记录里的时间 |
-| `engines_run` | 这句问了哪些引擎 |
-| `chatgpt_status`, `ai_mode_status` | `ok`（有引用）/ `ok_no_citations`（答了但没有引用）/ `error`（接口报错或超时）/ `rate_limited`（AI Mode 返回了请求上限提示）/ `not_run_quota`（第二轮没跑 AI Mode） |
-| `google_organic_top10_collected` | 有没有取 Google 自然结果前 10（第二轮培训行业没取） |
+## Use it for, and not for
 
-### 2.3 `citations.csv`
+**Good for:** checking any number in the [GEO Playbook](https://github.com/Canlah-AI/geo-playbook); studying the source mix of AI answers (government, commercial, forum and social; one engine against the other; one question type against another); re-asking the same 110 questions later or on another model and comparing; a starting point for research on what cited pages look like.
 
-| 列 | 说明 |
-|---|---|
-| `citation_id` | 问句 - 运行 - 引擎 - 顺序 |
-| `run_id` | `r1`、`r2`：正式运行。`r2_rerun`：第二轮牙科、B2B、电商的独立第二次调用。`r2_retry`：培训第 7 句的补跑 |
-| `official` | `yes` = 正式口径（stats.md 里的主数字只用这些行） |
-| `engine` | `chatgpt` / `google_ai_mode` |
-| `position` | 在这个答案里的顺序，从 1 开始。ChatGPT：按答案正文里第一次标注这个网址的先后排。AI Mode：按接口返回的来源列表顺序排，不一定等于正文里出现的先后 |
-| `url` | 被引网址，只删了 `utm_source=openai` 这个跟踪参数 |
-| `domain`, `reg_domain` | 主机名（去掉 `www.`）、注册域名（`booking.estheclinic.com.sg` → `estheclinic.com.sg`） |
-| `site_type` | 按域名规则自动分类，规则见第 4 节第 3 条 |
-| `is_ugc` | 是否论坛社媒类，`site_type = ugc_social` 时为 `yes` |
-| `mentions_in_answer` | 这个网址在答案正文里被标注了几次。只有牙科和电商的补跑文件保存了这一层信息，其余留空 |
-| `page_type_id` | 页型编号，见 `page_types.csv`。**只有牙科行业的正式运行有**，是我们写牙科版时逐条人工标的。另有三个不在 46 型里的标签：`maker`（厂商或品牌的产品资料页）、`booking`（预约商品页）、`gcard`（Google 内部卡片） |
+**Not for:** treating a single answer as a stable ranking or "AI visibility" score; scoring a named business; generalising beyond Singapore and these five industries; training a model to imitate an engine; reusing prices or legal facts from the answers without re-checking them (they are a 23 September 2026 snapshot).
 
-### 2.4 `chatgpt_answers.jsonl`
-
-每行一个 JSON 对象，字段有：`query_id`、`round`、`run_id`、`official`、`engine`、`model_requested`（都是 `gpt-5.5`）、`model_receipt`（接口返回的实际型号，例如 `gpt-5.5-2026-04-23`，没存的为 null）、`tool`、`user_location`、`api`、`probed_at`、`status`、`error`、`n_citations`、`text_chars`、`text_truncated`、`truncated_at_chars`、`note`、`text`。
-
-**截断**：第一轮和第二轮的正式运行只存了答案**前 600 个字符**。这 110 条里，108 条正好 600 字符（`text_truncated = true`），2 条是接口报错、没有正文。第二轮补跑的 30 条是**全文**。培训第 7 句的补跑存到前 1,500 字符。
-
-### 2.5 `page_annotations.csv`
-
-我们自己的标注，分两种来源：
-
-- `r1_page_teardown`（92 行）：第一轮报告《实测-被引页版式》的逐页底稿。底稿由 AI 助手（多代理工作流）按我们定的字段读页面原件写成，没有逐条人工复核；这里把它结构化成表。
-- `r2_catalogue_sample`（49 行）：第二轮页型目录里每种页型列的「被引样本」。
-
-| 列 | 说明 |
-|---|---|
-| `cited_by`, `n_citations_chatgpt`, `n_citations_ai_mode` | 从 `citations.csv` 按网址（逐字相同）反查。第一轮只查正式运行。第二轮样本：`cited_by` 看所有运行，`n_citations_chatgpt` 只数正式运行 `r2`，所以只在补跑里出现的页这里是 0，`notes` 里写明「found only in the supplementary re-run」 |
-| `page_type_teardown` | 第一轮拆解时用的页型标签（registry / qa / pdp / article / comparison / listicle / docs / profile / category），这是 46 型之前的一套叫法 |
-| `page_type_id` | 46 型编号：第一轮牙科取自逐条人工标注，第二轮样本取自它所在的目录小节；其余留空 |
-| `site_owner_teardown`, `h1` | 拆解时记下的站点身份与 H1 |
-| `above_fold_words` | 首屏（H1 到第一个 H2 之间）的词数，拆解时估的 |
-| `n_tables`, `has_table` | HTML 表格张数。用 div 画的「表」按 0 计 |
-| `has_faq` | 有没有 FAQ 区块 |
-| `numbers_on_page_approx` | 页面上数字的个数，拆解时估的 |
-| `byline_date_note` | 署名和日期的原始记录 |
-| `excerpt_pos_pct`, `excerpt_pos_min_pct` | 被抄那句在页面上的位置，按篇幅百分比。**目测估计**，从 `excerpt_position_note` 里抽出来的；一页被抄了几处就有几个值 |
-| `note_mentions_table`, `note_mentions_faq` | 位置记录里有没有提到表格或 FAQ。这是关键词匹配的结果，不是逐条编码 |
-| `excerpt_position_note`, `notes` | 标注原文（中文），里面有少量从页面或 ChatGPT 答案里摘出的短句。凡是摘了 Google AI Mode 答案原句（20 个字符以上）的地方，已替换成「（AI Mode 答案原句，不公开）」，共 44 处（30 处能和存下的前 600 字逐字对上；另 14 处是标注里明说出自 AI Mode 答案、但落在前 600 字之外的，按标注的说法替换） |
-
-抽不出来的字段一律留空，没有补猜。
-
-### 2.6 `page_types.csv`
-
-46 种页型：`page_type_id`、`catalogue_no`、中英文名、六个家族（`family_en` / `family_zh`）、证据档（A = 第一轮两个引擎都测过，B = 第二轮只在 ChatGPT 上测过，C = 只在一份外部拆解里见过，我们没测）、典型问法、目录里写的被引数（原文）、第二轮 ChatGPT 的 n 及分行业拆分（目录里写了的才填）、主要被哪个引擎引、典型长度、受监管行业能不能做、适用行业，以及牙科的逐条重数（`dental_recount_*`）。
-
-**注意**：目录里的 n 是分析时按页型点数的，口径混了正式运行、补跑和出现次数（见 stats.md 第 2 节），只能当页型之间的相对大小看。`dental_recount_*` 三列才是从正式记录重数的。
-
-## 3. 采集方法
-
-- **ChatGPT**：OpenAI Responses API，`model = gpt-5.5`，工具 `web_search`，`user_location = {type: approximate, country: SG, city: Singapore}`，没有系统提示词，问句原样作为 `input`。引用取自 `output_text` 里类型为 `url_citation` 的标注，每个答案内部去重。这是**接口**结果，不是 chatgpt.com 网页版看到的界面。型号是锁定的，不随主力型号更换。
-- **Google AI Mode**（只有第一轮）：通过 SerpApi 的 `google_ai_mode` 引擎，`gl=sg`、`hl=en`；引用取自返回的 `references` 列表。是第三方接口的结果，不是浏览器里看到的页面。
-- **Google 自然结果**（只用于聚合统计）：Serper.dev，`gl=sg`，每句取前 10。
-- **问句来源**：第一轮的热词取自 Google 自动补全（`gl=sg`），我们挑了决策类问法，另写了中文句；第二轮按 9 类问法每类写 1 句。
-- **被引网页**：第一轮对 92 个被引网页下载原件逐页拆解，部分页面用浏览器渲染后再读。原件不公开。
-- **每句只问了一次**（正式口径）。第二轮有 30 句问了两次，两次的差异见 stats.md 3.5。
-
-## 4. 预处理
-
-1. 网址只删 `utm_source=openai` 参数（917 条里 30 条受影响），其余不动。删完之后没有答案内部新增重复。
-2. `domain` 去掉开头的 `www.`；`reg_domain` 按常见二级后缀（`.com.sg`、`.gov.sg`、`.co.uk` 等）截取。
-3. **站点类型规则**（自动分类，没有逐条人工核对）：
-   - `government`：主机名以 `.gov.sg` 或 `.gov` / `.gov.xx` 结尾；另加 `chas.sg`、`healthhub.sg`、`visitsingapore.com`、`roc-taiwan.org`。
-   - `public_nonprofit`：主机名以 `.moe.edu.sg` 或 `.int` 结尾，或注册域名是下列之一：`singhealth.com.sg`、`kkh.com.sg`、`sgh.com.sg`、`nuh.com.sg`、`nhghealth.com.sg`、`ndcs.com.sg`、`healthxchange.sg`（公立医疗）；`nus.edu.sg`、`smu.edu.sg`、`nyp.edu.sg`、`sota.edu.sg`（公立院校）；`elitigation.sg`、`sal.sg`、`academypublishing.org.sg`、`lawsociety.org.sg`、`sda.org.sg`、`case.org.sg`、`sias.org.sg`、`abs.org.sg`、`aomss.org.sg`、`cdac.org.sg`、`probono.sg`、`britishcouncil.sg`（法定、专业与非营利团体）；`aad.org`、`aaoinfo.org`、`mouthhealthy.org`、`perio.org`、`cda-adc.ca`、`bos.org.uk`、`peppol.org`（海外专业团体与标准组织）；`mayoclinic.org`、`clevelandclinic.org`（学术医疗机构）。注意：`.edu.sg` 结尾的私立补习机构不算在内。
-   - `ugc_social`（即 `is_ugc = yes`）：reddit、quora、facebook、youtube、instagram、tiktok、x / twitter、linkedin、medium、lemon8、小红书、知乎、tripadvisor、yelp、glassdoor、scribd、pinterest、threads，以及主机名以 `forum.` 或 `forums.` 开头的站。
-   - `google_internal`：`google.com` 本身的页面（AI Mode 的 searchviewer 卡片、Shopping 商品卡）。
-   - `commercial_media_other`：其余全部，包括企业官网、诊所、律所、电商、媒体、目录站、评测站。**这一类没有再细分**。
-4. 页型标注：牙科是写牙科版时逐条人工标的；其他行业没有逐条页型。
-5. 页面标注从中文底稿结构化：字段按「H1：」「表：」「FAQ：」等标签切出；位置百分比用正则抽取，抽取前先去掉引号里的内容，并跳过「都在前 30%」这类概括性说法。
-
-## 5. 局限
-
-- **每句只问一次。** 第二轮同一句问两次，网址的交集只占并集的 24%（53 / 222，stats.md 3.5）。任何单句结果都是一次抽样。
-- **第二轮只有一个引擎。** AI Mode 没测，所以 33 种第二轮页型只有 ChatGPT 的证据；「没测」不等于「AI Mode 不引」。
-- **位置是目测。** 被抄句的位置是标注人按页面篇幅估的，不是按字符编码的。
-- **样本小。** 每个行业 10–12 句，每个页型的 n 大多是个位数。
-- **新加坡单一市场**，英文为主，中文只有 11 句。
-- **接口，不是界面。** 两个引擎都是通过接口取的，和用户在网页或 App 里看到的可能不同；AI Mode 还经过了第三方 SERP 接口。
-- **时间点。** 全部取自 2026-09-23 凌晨，两轮相隔约 55 分钟。模型和搜索索引会变。
-- **答案截断。** 正式运行的答案只存了前 600 字符，没法把答案后半段的每一句对应到引用。
-- **站点类型是规则分类**，「其他」里混着商业站和媒体站。
-- **页型目录的 n 值口径不一**（见 stats.md 第 2 节）。
-- **两个 AI 引擎都被我们要求在新加坡定位下作答**，但 AI Mode 腿只设了 `gl=sg`，没有更细的地理位置。
-
-## 6. 适合与不适合的用途
-
-**适合**：
-- 核对《GEO Playbook》里的数字；
-- 研究 AI 答案的引用来源结构（政府、商业、论坛社媒的比例，两个引擎的差别，问法对来源的影响）；
-- 在同一批问句上复测，比较不同时间、不同型号；
-- 作为被引页版式研究的起点（网址 + 标注）。
-
-**不适合**：
-- 当作排名或「AI 可见度」的稳定基准（每句一次抽样）；
-- 推断某家具体企业的表现，或给企业打分；
-- 推广到新加坡以外的市场，或推广到这 5 个行业以外；
-- 训练模型去复刻某个引擎的答案；
-- 在没有重新核对的情况下，把答案里的价格、法规等事实当作现行信息使用（答案是 2026-09-23 的快照，可能有错）。
-
-## 7. 不包含什么
-
-| 不包含 | 原因 | 用什么代替 |
-|---|---|---|
-| Google AI Mode 的答案正文，包括标注里摘的原句 | Google 的内容，不归我们再发布 | 只发被引网址、顺序和引擎；标注里的原句已替换成占位符 |
-| Serper 抓的 Google 自然结果列表 | Google 的排名结果 | 只在 stats.md 里发聚合数（前 10 里论坛社媒占几成、AI 引用有几成在前 10 里） |
-| 下载的第三方网页原件 | 第三方版权 | 只发网址和我们的标注 |
-| 补跑文件里「每条引用前 260–350 字」的片段 | 和全文答案重复 | 全文在 `chatgpt_answers.jsonl` |
-| 培训第 7 句两次超时的补跑（其中一次换了措辞） | 没有数据 | 在本节记录 |
-| 第一轮的备份文件 | 和正式文件逐字相同，只是少了 Google 自然结果字段 | — |
-
-答案文本里可能出现公开的机构名、执业者名和新闻里提到的事件，这些都来自公开网页。问句里点名的企业（例如某家诊所、律所、补习中心）是作为「某家好不好」这类问法的例子，不代表我们对它们的评价。
-
-## 8. 许可
-
-内容以 [CC BY 4.0](LICENSE) 发布。使用时请署名并注明出处。ChatGPT 答案文本是我们通过 OpenAI API 取得的输出；被引网址指向的网页，版权归各自的所有者。
-
-## 9. 怎么引用
-
-请引用本数据集（元数据见 [CITATION.cff](CITATION.cff)）：
+## Cite
 
 > Pang, Haoyang (2026). *Singapore GEO Citation Probes, September 2026 (ChatGPT and Google AI Mode)* (Version 1.0) [Data set]. Canlah AI. Zenodo. https://doi.org/10.5281/zenodo.23005020
 
@@ -225,9 +136,19 @@ configs:
 }
 ```
 
-同一份数据的其他副本：GitHub https://github.com/Canlah-AI/ai-citations-sg-2026 · Hugging Face https://huggingface.co/datasets/CanlahAI/ai-citations-sg-2026 · 官网 https://canlah.ai/data/ai-citations-sg-2026/。与本数据集配套的方法书是《GEO Playbook》v1.0：https://canlah.ai/zh/playbook/（DOI 10.5281/zenodo.23005022）。
+GitHub's "Cite this repository" button reads [`CITATION.cff`](CITATION.cff). License: [CC BY 4.0](LICENSE). ChatGPT answer texts are outputs we obtained through the OpenAI API; the pages behind the cited URLs belong to their owners.
 
-## 10. 维护
+**Star this repo** if you use the data. Stars are how other researchers and marketers find an AI-citation dataset they can recount. New data ships as a new version; this one stays as it is.
 
-- 联系方式：Canlah AI，https://canlah.ai
-- 已知的下一步：Google AI Mode 腿的第二轮补测，以及对关键问句做多次重复。补测数据会作为新版本发布，不覆盖本版。
+## Related
+
+- [Canlah-AI/geo-playbook](https://github.com/Canlah-AI/geo-playbook): the method built on this data, packaged as an agent skill for Claude Code, Codex, Cursor and OpenClaw. Full book on [canlah.ai](https://canlah.ai/playbook/?utm_source=github&utm_medium=community&utm_campaign=wk1019&utm_content=ai-citations-readme) (CC BY 4.0, DOI [10.5281/zenodo.23005022](https://doi.org/10.5281/zenodo.23005022)).
+- Mirrors of this dataset: [Hugging Face](https://huggingface.co/datasets/CanlahAI/ai-citations-sg-2026) · [Zenodo](https://doi.org/10.5281/zenodo.23005020) · [canlah.ai](https://canlah.ai/data/ai-citations-sg-2026/?utm_source=github&utm_medium=community&utm_campaign=wk1019&utm_content=ai-citations-readme)
+- [Canlah-AI/agent-readiness-2026](https://github.com/Canlah-AI/agent-readiness-2026): of 47 reachable cross-border DTC storefronts, none had product, review and Q&A structured data all in place (CC BY 4.0).
+- [*Marketing in the Agent Era*](https://canlah.ai/whitepaper/?utm_source=github&utm_medium=community&utm_campaign=wk1019&utm_content=ai-citations-readme): our whitepaper; full text free on the web.
+
+**Coming next from Canlah AI:** 《AI 数字营销实战》, a 1,100+ page hands-on Chinese textbook on AI marketing with 21 chapters and 63 exercises. Follow [Canlah-AI](https://github.com/Canlah-AI) to catch the release.
+
+---
+
+**中文简介。** 我们把新加坡 5 个行业的 110 个买家问句问了 ChatGPT（OpenAI 接口，gpt-5.5 开网页搜索、定位新加坡），第一轮同时问了 Google AI 模式（第三方 SERP 接口）。逐句比，两个引擎只共用了 507 个被引网址里的 19 个（3.7%）；ChatGPT 引的网址只有 7.2%（22/307）在同一句问题的 Google 自然结果前十里；同一句隔几分钟问两次，网址只重合 23.9%（53/222）。问句、全部被引网址、ChatGPT 答案原文、被引页逐页标注都在这里，CC BY 4.0，可以自己重数。字段定义、预处理、局限和不包含什么，见 [中文完整数据说明](DATASHEET.zh.md)；方法书见 [GEO Playbook 中文版](https://canlah.ai/zh/playbook/?utm_source=github&utm_medium=community&utm_campaign=wk1019&utm_content=ai-citations-readme)。用得上就点个 Star。
